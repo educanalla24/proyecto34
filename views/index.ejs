@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAISES EDU</title>
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+</head>
+<body>
+    <h1>Holaaa mundito🌎</h1> 
+    
+    <form action="/paisess" method="POST" class="buttons">
+        <button type="submit" value="colombia" name="choice">CO</button>
+        <button type="submit" value="honduras" name="choice">HO</button>
+        <button type="submit" value="cuba" name="choice">CU</button>
+
+
+    </form>
+    
+     <div id="paisesDetalles" class="hidden">
+
+         <h2>pick your favorite country</h2>
+       <h3>informacion:</h3>
+       <ul id="listaInformacion">
+        <li>nombre del pais:<%=todalaData?.name?.common || 'No disponible' %></li>
+        <li>moneda:<%=todalaData?.currencies?.COP?.name%></li>
+
+        </ul>
+
+     </div>
+
+   
+
+
+</body>
+</html>
